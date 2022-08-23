@@ -1,2 +1,4 @@
 # jgree-Python_repo
-Repo for Python learning 
+
+Repo for Python learning
+Direct commits to main branch are prohibited
