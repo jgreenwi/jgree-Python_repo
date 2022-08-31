@@ -117,3 +117,17 @@ student_info('Math', 'Art', name='Jeri', age=30)
 courses = ['Math', 'Art']
 info = {'name': 'Jeri', 'age':30}
 student_info(*courses, **info)
+#Practice if_name/main var. importing file runs code
+import first_module
+if __name__ == '__main__':
+   print ("Run Directly")
+else:
+    print ("Run From Import")
+
+print("This will always be Run")
+def main():
+    print("First Module's Main Method")
+    
+if __name__=='__main__'
+    main()
+    
