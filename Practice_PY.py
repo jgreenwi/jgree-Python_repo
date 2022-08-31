@@ -1,5 +1,4 @@
 #Python Practice 
-import Value
 import random
 #this function inputs the random method 
 #choice method gives random values from a list of random values
@@ -35,3 +34,55 @@ print(deck)
 deck = list(range(1, 53))
 hand = random.sample(deck, k=5)
 print(hand)
+
+#new lab practice on LOOPS
+nums = [1, 2, 3, 4, 5]
+for num in nums:
+    print(num)
+#add new condition: if number equals 3 then print out value
+for num in nums:
+    if num == 3:
+        print('Found!')
+        break
+    print(num)
+#continue statements will skip to next iteration
+for num in nums:
+    if num == 3:
+        print('Found!')
+        continue
+    print(num)
+#loop within a loop example:for ea number within a string it will loop and print, then do it again with ev number
+for num in nums:
+    for letter in 'abc':
+        print(num, letter)
+#range allows you to go through a loop a certain number of times
+for i in range(10):
+    print(i)
+#to start value at 1 and end at 11
+for i in range(1, 11):
+    print(i)
+#while loops will continue until theres a break
+x = 0
+while x < 10:
+    print(x)
+    x += 1
+#10 isnt less than 10 so it breaks the loop without an actual 'script'
+#keep a loop going infinite (press ctrl + c to stop infinite)
+x = 0
+
+while True:
+    if x == 5:
+        break
+    print(x)
+    x += 1
+#Functions : instructions that help you complete a specific task
+#functions use [def] key for definition. Parameters go in ().Pass allows you to leave function blank 
+def hello_func():
+    pass
+print(hello_func())
+#put code into function. The () at the end of hello executes function
+def hello_func():
+    print('Hello Function!')
+#practice execute. You can change the (!) in the function by changing it in the print section-execution will then update
+hello_func()
+hello_func()
