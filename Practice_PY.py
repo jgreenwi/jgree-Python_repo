@@ -86,3 +86,34 @@ def hello_func():
 #practice execute. You can change the (!) in the function by changing it in the print section-execution will then update
 hello_func()
 hello_func()
+#Dry code: repeating the code instead of utilizing code. Return codes are 
+def hello_function():
+    return 'Hello Function.'
+#print(hello_func()
+
+#print(len(hello_func()))
+#uppercase your string within the funtion:
+#print(hello_func().upper())
+#pass arguments to your functions with parameters (). Greeting has to be passed with function or youll get an error
+def hello_func(greeting):
+    return '{} Function.'.format(greeting)
+    print(hello_func())
+#greeting var will equal string 'hi' and will return function
+def hello_func(greeting):
+    return '{} Function.'.format(greeting)
+print(hello_func('Hi'))
+#Practice more with greeting function
+def hello_func(greeting, name = 'You'):
+    return '{}, {}'.format(greeting, name)
+print(hello_func('Hi', name = 'Jeri'))
+#Arguments: *args, **kwargs = arbitrary positional argument.
+#ex: student info has positional argument and reps the classes the student is taking plus
+#keyword args with random info
+def student_info(*args, **kwargs):
+    print(args)
+    print(kwargs)
+student_info('Math', 'Art', name='Jeri', age=30)
+#dictionaries need curly bracs 
+courses = ['Math', 'Art']
+info = {'name': 'Jeri', 'age':30}
+student_info(*courses, **info)
