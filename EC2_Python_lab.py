@@ -19,4 +19,6 @@ letters= (string.ascii_letters+string.digits)
 unique = ''.join(random.sample(letters,5))
 #print(unique)
 #below function gives you an unique EC2 name with a random generated departmet
-
+result = (aws_dept)
+aws_ec2_name= (unique)
+print(random.choice(aws_dept), unique)
