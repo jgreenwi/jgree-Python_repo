@@ -12,7 +12,14 @@ from time import sleep
 #create list of EC2 unique names
 aws_dept = []
 aws_dept = ["accounting", "marketing", "finops"]
-ec2_name= int(len(input("Insert the amount of EC2 instances preferred")))
+ec2_name= int(len(input("Insert the amount of EC2 instances preferred:")))
+
+
+
+sleep(3)
+
+aws_ec2_name = input("what is your dept name?")
+print(input)
 
 sleep(3)
 letters= (string.ascii_letters+string.digits)
