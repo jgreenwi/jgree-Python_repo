@@ -10,20 +10,22 @@ import string
 from time import sleep
 
 #create list of EC2 unique names
-aws_ec2_name = ["Accounting", "FinOps", ]
-aws_ec2_name.append(random.choice)
-print(radomn.choice(aws_ec2_name)
-
-letters= string.ascii_letters
-x ="".join(random.sample(letters,5))
-print(x)
+aws_dept = []
+aws_dept = ["accounting", "marketing", "finops"]
+ec2_name= int(len(input("Insert the amount of EC2 instances preferred:")))
 
 
-#Complex: asks department name with string clarification 
+
 sleep(3)
-aws_ec2_name = input("What is your department name?")
+
+aws_ec2_name = input("what is your dept name?")
 print(input)
 
-sample_text ="FinOps"
-result = string.capwords(sample_text)
-print(result)
+sleep(3)
+letters= (string.ascii_letters+string.digits)
+unique = ''.join(random.sample(letters,5))
+#print(unique)
+#below function gives you an unique EC2 name with a random generated departmet
+result = (aws_dept)
+aws_ec2_name= (unique)
+print(random.choice(aws_dept), unique)
