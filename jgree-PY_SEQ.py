@@ -1,7 +1,7 @@
 #this is a test code to make sure I can push to Github 
 print("aws service project")
 #sending another test message to git hub for lab 
-#The following lines will begin our AWS Lab. Write Python Code below
+#The following lines will begin our AWS Lab. Write Python Code below using Cloud9 and push the comments to Github.
 #Create an empty list 
 amazon_serv_list = [ ]
 print(amazon_serv_list)
@@ -19,3 +19,4 @@ time.sleep(2)
 del amazon_serv_list[2]
 print(amazon_serv_list)
 time.sleep(2)
+#this concludes the lab. 
