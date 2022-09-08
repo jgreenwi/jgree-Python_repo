@@ -9,17 +9,11 @@
 #Create s3 bucket commands:
 import boto3
 aws_resource=boto3.resource('s3') #creates a variable within s3
-bucket=aws_resource.Bucket("botobucket") #names your bucket
+bucket=aws_resource.Bucket('jgree09') #names your bucket
 response = bucket.create(
-    ACL='public-read',
-    CreateBucketConfiguration={
-        'LocationConstraint': 'us-east-1'},
-    GrantFullControl='string',
-    GrantRead='string',
-    GrantReadACP='string',
-    GrantWrite='string',
-    GrantWriteACP='string',
-    ObjectLockEnabledForBucket=True|False,
-    ObjectOwnership='BucketOwnerPreferred'|'ObjectWriter'|'BucketOwnerEnforced'
-)
+    ACL='public-read'
+        
+)  
+
+print(response)
 
