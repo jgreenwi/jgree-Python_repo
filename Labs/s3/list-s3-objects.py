@@ -7,3 +7,4 @@ if len(objects)>0:
     print("object exists")
 for objects in objects:
     print(object)
+    
