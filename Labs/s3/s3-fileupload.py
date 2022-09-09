@@ -24,5 +24,5 @@ for file in file:
 #file[0].split("/")(-1)
 #the above command list files and presents the last item
 
-#important notes:
+#important notes: 
 #in order to upload a file using an IDE you must first save it to the IDE to upload it into your code. Otherwise you will receve an error messages "no file"
