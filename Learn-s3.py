@@ -30,7 +30,8 @@
 #AWS s3 automation using boto3 
 #How to get a s3 bucket creation date using boto3
 import boto3
-#client = low level service 
 s3_resource=boto3.client("s3")
 s3_resource.list_buckets()["Buckets"][0]["Name"]
-s3_resource.list_buckets()["Buckets"][0]["Creationdate"]
+#s3_resource.list_buckets()["Buckets"][0]["Creationdate"]
+creation_date=s3_resource.list_buckets()["Buckets"][0]["CreationDate"]
+creation_date.strftime("%d%m%y_%H:%M:%s")
