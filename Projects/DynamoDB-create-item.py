@@ -65,6 +65,66 @@ response = dynamodb.put_item(
         'Rank': {
             'S': '5',
         },    
+    'ID':{
+          'S': 'uxnYSyg5tW'  ,
+        },
+        'Theme Park': {
+            'S': 'Universal Studios',
+        },
+        'Ride': {
+            'S': 'Amazing Spider-man',
+        },
+        'Rank': {
+            'S': '6',
+        },    
+    'ID':{
+          'S': 'rgqyz0cIDQ'  ,
+        },
+        'Theme Park': {
+            'S': 'King Kong',
+        },
+        'Ride': {
+            'S': '',
+        },
+        'Rank': {
+            'S': '7',
+        },    
+    'ID':{
+          'S': '6LzW5jI9it'  ,
+        },
+        'Theme Park': {
+            'S': 'Magical Kingdom',
+        },
+        'Ride': {
+            'S': 'Space Mountain',
+        },
+        'Rank': {
+            'S': '8',
+        },    
+    'ID':{
+          'S': 'VCy2lMlqgH'  ,
+        },
+        'Theme Park': {
+            'S': 'Animal Kingdom',
+        },
+        'Ride': {
+            'S': 'Legend of Forbidden Mountain',
+        },
+        'Rank': {
+            'S': '9',
+        },    
+    'ID':{
+          'S': 'o9Id85edOy'  ,
+        },
+        'Theme Park': {
+            'S': 'Universal Studios',
+        },
+        'Ride': {
+            'S': 'Revenge of the Mummy',
+        },
+        'Rank': {
+            'S': '10',
+        },    
     
     },
     ReturnConsumedCapacity='TOTAL',
