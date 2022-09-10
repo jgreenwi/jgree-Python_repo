@@ -19,3 +19,4 @@ for object in objects:
     s3_resource.delete_object(Bucket="jgree09" ,
     key=object["Key"])
     print(object["Key"])
+#adding comment for commit
