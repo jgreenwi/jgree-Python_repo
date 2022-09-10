@@ -1,6 +1,6 @@
 #Create DynamoDB table using boto
 import boto3
-
+from boto3.dynamodb.conditions import Key
 # replace the keys below
 
 dynamodb = boto3.resource(
@@ -32,3 +32,7 @@ response = dynamodb.create_table(
 )
 
 print(response)
+
+response = table.quetry(
+    KeyConditionExpression=Key('Sr').eq(0))
+response["Items"]

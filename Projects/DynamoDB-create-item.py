@@ -1,4 +1,5 @@
 import boto3
+from boto3.dynamodb.conditions import Key, Attr
 
 dynamodb = boto3.client('dynamodb')
 
@@ -69,3 +70,16 @@ response = dynamodb.put_item(
     ReturnConsumedCapacity='TOTAL',
     TableName='DisneyAttractions',
 )
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('Theme Park')
+response = table.scan(
+     TableName='DisneyAttractions',
+ #   FrilterExpression=Limit('Rank').gte(0)
+      ExpressionAttributeValues={
+        'Rank': {
+            'N': '1'
+ },
+ ConsistentRead=True|False
+ )
+            
+print(table.scan)
