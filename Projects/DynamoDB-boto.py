@@ -5,8 +5,8 @@ from boto3.dynamodb.conditions import Key
 
 dynamodb = boto3.resource(
     'dynamodb',
-    aws_access_key_id='AKIAW2L4ZXZGPQ6UVGFF',
-    aws_secret_access_key='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',
+   # aws_access_key_id=*
+    #aws_secret_access_key=*,
     )
 
 dynamodb = boto3.client('dynamodb')
