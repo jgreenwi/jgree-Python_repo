@@ -9,4 +9,10 @@ response = client.describe_vpcs(
     ],
   
 )
-
+#code for checking amt of vpc
+x=client.describe_vpcs()
+no_of_vpcs=x["Vpcs"]
+len(no_of_vpcs)
+#automation #2
+for vpc in no_of_vpcs:
+    print(vpc["vpc-04c098223e51ee806"])
