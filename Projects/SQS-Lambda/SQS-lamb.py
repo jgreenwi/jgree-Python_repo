@@ -4,13 +4,13 @@ from datetime import datetime
 client = boto3.client('sqs')
 
 def lambda_handler(event, context):
-        #Get the current date & time
+        #Print Current Date and Time
     response = "The time and date is: "
     date_time = datetime.now()
     
-    #send sqs message with the current date & time
+    #Respond with sqs date and time
     message = client.send_message(
-        QueueUrl='https://queue.amazonaws.com/191325089225/week15-sqs-queue',
+        QueueUrl='https://queue.amazonaws.com/468950040140/jgreeQueue',
         MessageBody=("This was sent on: " + str(date_time.strftime('%Y-%m-%d %H:%M:%S')))
         )
     return {
