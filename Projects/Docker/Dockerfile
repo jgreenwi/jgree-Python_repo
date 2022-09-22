@@ -3,3 +3,4 @@ FROM nginx
 COPY index.html /usr/share/nginx/html
 EXPOSE 8080
 RUN apt update -y
+CMD ["nginx", "-g", "daemon off;"]
